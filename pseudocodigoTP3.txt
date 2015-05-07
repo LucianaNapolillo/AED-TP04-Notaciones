@@ -1,0 +1,193 @@
+Alumna: Luciana Napolillo
+Descripción: Pseudocódigo del TP3 (Juego de preguntas y respuestas)
+Ultima fecha modificacion: 06/05/2015
+-----------------------------------------------
+
+Entero opcion, puntaje, puntajeTotal
+Lógico salir, correcto
+Caracter seguir, respuesta
+
+Inicio 
+
+puntajeTotal <- 0
+
+  Hacer 
+      Escribir Elegi una categoria:
+      Escribir 1- Musica
+      Escribir 2- Ciencias
+      Escribir 3- Historia
+      Escribir 0- Salir
+      Leer opcion
+
+        Si opcion es 1 entonces
+            puntaje <- 0
+            Escribir Cual es el nombre de la quinta nota en la escala musical?
+            Escribir A- Si
+            Escribir B- Mi
+            Escribir C- Sol
+            Escribir D- Re
+            Leer respuesta
+
+                Si respuesta es C entonces
+                    puntaje <- puntaje + 1
+                    Escribir Respuesta correcta!
+                Si no
+                    Escribir Respuesta incorrecta!
+                Fin si
+
+            Escribir A que banda pertenece el album OK Computer?
+            Escribir A- Radiohead
+            Escribir B- Metallica
+            Escribir C- Arctic Monkeys
+            Escribir D- Rammstein
+            Leer respuesta
+       
+                Si respuesta es A
+                   puntaje <- puntaje + 1
+                   Escribir Respuesta correcta!
+                Si no
+                    Escribir Respuesta incorrecta!
+                Fin si
+                 
+
+            Escribir Cuantos tiempos representa una redonda?
+            Escribir A- 6
+            Escribir B- 3
+            Escribir C- 4
+            Escribir D- 2
+            Leer respuesta
+     
+                Si respuesta es C
+                   puntaje <- puntaje + 1
+                   Escribir Respuesta correcta!
+                Si no
+                    Escribir Respuesta incorrecta!
+                Fin si
+             
+            puntajeTotal <- puntajeTotal + puntaje
+            Escribir Categoria finalizada, puntaje:  puntaje
+
+            Escribir Queres seguir jugando? S/N 
+            Leer seguir
+            salir <- seguir es N?
+        Fin si  
+
+        Si opcion es 2 
+          	puntaje <- 0
+          	Escribir Cuál de las siguientes enfermedades ataca al higado?
+        		Escribir A- Hepatitis
+        		Escribir B- Diabetes
+        		Escribir C- Artrósis
+        		Escribir D- Cifoescoliosis
+      		  Leer respuesta
+
+          		Si respuesta es A
+          			puntaje <- puntaje + 1
+          			Escribir Respuesta correcta!
+          		Si no
+          			Escribir Respuesta incorrecta!
+              Fin si
+          		
+
+        		Escribir Qué cambio de estado ocurre en la sublimación?
+        		Escribir A- De sólido a líquido
+        		Escribir B- De sólido a gaseoso
+        		Escribir C- De gaseoso a líquido
+        		Escribir D- De líquido a solido
+      	   	Leer respuesta
+
+          		Si respuesta es B
+          			puntaje <- puntaje + 1
+          			Escribir Respuesta correcta!
+          		Si no
+          			Escribir Respuesta incorrecta!
+              Fin si
+      		
+
+        		Escribir Como se llama el grafico que representa a una ecuación de segundo grado?
+        		Escribir A- Recta
+        		Escribir B- Parabola
+        		Escribir C- Hiperbola
+        		Escribir D- Vector
+            Leer respuesta
+
+          		Si respuesta es B
+          			puntaje++
+          			Escribir Respuesta correcta!
+          		Si no
+          			Escribir Respuesta incorrecta!
+              Fin si
+
+        	  puntajeTotal <- puntajeTotal + puntaje
+
+        	  Escribir Categoria finalizada, puntaje:  puntaje
+
+            Escribir Queres seguir jugando? S/N 
+            Leer seguir
+            salir <- seguir es N?
+        Fin Si   
+
+        Si opcion es 3 
+          	puntaje <- 0
+          	Escribir Quien fue Frederic Chopin?
+        		Escribir A- Un cantante
+        		Escribir B- Un pintor
+        		Escribir C- Un cientifico
+        		Escribir D- Un compositor
+      		  Leer respuesta
+
+          		Si respuesta es D
+          			puntaje <- puntaje + 1
+          			Escribir Respuesta correcta!
+          		Si no
+          			Escribir Respuesta incorrecta!
+              Fin si
+      		
+
+        		Escribir Cual fue la civilizacion que invento la escritura?
+        		Escribir A- Egipcios
+        		Escribir B- Griegos
+        		Escribir C- Sumerios
+        		Escribir D- Persas
+        		Leer respuesta
+
+            		Si respuesta es C
+            			puntaje <- puntaje + 1
+            			Escribir Respuesta correcta!
+            		Si no
+            			Escribir Respuesta incorrecta!
+            		Fin si
+
+        		Escribir En que año se fundo por primera vez la ciudad de Buenos Aires?
+        		Escribir A- 1536
+        		Escribir B- 1542
+        		Escribir C- 1670
+        		Escribir D- 1642
+        		Leer respuesta
+
+            		Si respuesta es A
+            			puntaje <- puntaje + 1
+            			Escribir Respuesta correcta!
+            		Si no
+            			Escribir Respuesta incorrecta!
+                Fin si
+        		
+        	  puntajeTotal <- puntajeTotal + puntaje
+
+        	  Escribir Categoria finalizada, puntaje:  puntaje
+
+            Escribir Queres seguir jugando? S/N 
+            Leer seguir
+
+            salir <- seguir es N?
+        Fin si  
+
+        Si opcion es 0 entonces
+          salir <- verdadero
+        Fin si
+
+  Mientras salir sea falso
+
+  Escribir Puntaje total: puntajeTotal
+
+Fin
